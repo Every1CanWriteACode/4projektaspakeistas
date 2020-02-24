@@ -8,14 +8,19 @@ body{
     margin-top: 80px;
     margin-left: calc(50% - 400px);
 
+    position: relative;
 }
     .left{
         display: inline-block;
-        float: left;
         width: 40%;
-        padding: 50px;
+        padding: 40px;
         background-color: #36F;
         color: #fff;
+
+        position: absolute;
+        top: 20px;
+        left: 0;
+        bottom: 20px;
     }
         h1{
         text-transform: capitalize;
@@ -23,7 +28,10 @@ body{
         font-weight: normal;
         }
         footer{
-            
+            position: absolute;
+            left: 50px;
+            right: 50px;
+            bottom: 20px; 
         }
             footer > a{
             color: #fff;
@@ -33,15 +41,29 @@ body{
             }
     .right{
         display: inline-block;
-        float: left;
+        float: right;
         padding: 80px;
         width: 60%;
         background-color: #fff;
-        }
+        position: relative;
+         }
         .x{
+            display: inline-block;
             
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 76px;
+            
+            position: absolute;
+            top: 0;
+            right: 0;
         } 
-        .form-row > *{
+        .btn,
+        .form-row > span,
+        .form-row > a
+        {
             display: inline-block;
             float: left;
             padding: 10px;
